@@ -53,7 +53,7 @@ class PizzaStore
         }
 
         // baking time
-        echo "Bake for 25 minutes at 350\n";
+        echo "Bake for 25 minutes at 350℉\n";
 
         // cutting
         echo "Cut the pizza into diagonal slices\n";

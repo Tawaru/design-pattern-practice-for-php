@@ -21,8 +21,8 @@ abstract class Pizza
     }
 
     public function bake()
-    {
-        echo "Bake for 25 minutes at 350\n";
+    {℉
+        echo "Bake for 25 minutes at 350℉\n";
     }
 
     public function cut()
@@ -79,5 +79,20 @@ class NYStyleVeggiePizza extends Pizza
         $this->toppings[] = "Onion";
         $this->toppings[] = "Mushrooms";
         $this->toppings[] = "Red Pepper";
+    }
+}
+
+class JPStyleTeriyakiPizza extends Pizza
+{
+
+    public function __construct()
+    {
+        parent::__construct();
+        $this->name = "JP Style Teriyaki Pizza";
+        $this->dough = "Hand-tossed Crust Dough";
+        $this->sauce = "Teriyaki Sauce";
+        $this->toppings[] = "Japanese Mayonnaise";
+        $this->toppings[] = "Roasted Chicken";
+        $this->toppings[] = "Shredded Dried Seaweed";
     }
 }
