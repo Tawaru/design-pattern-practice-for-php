@@ -21,7 +21,7 @@ abstract class Pizza
     }
 
     public function bake()
-    {℉
+    {
         echo "Bake for 25 minutes at 350℉\n";
     }
 
